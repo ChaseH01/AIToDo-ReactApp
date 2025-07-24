@@ -81,14 +81,17 @@ Maintained a modular codebase with readable, well-documented files. API endpoint
 ### 5. A progress bar also tracks how many tasks a user has completed:
 ![Login Screen](/images/progress.png)
 
-### 6. Utilizing the OpenAI API, a user can harness the power of AI to add to their to-dos
+### 6. Tasks are easily deleted and edited, immediately updated and saved in mongoDB
+![Login Screen](/images/edit.png)
+
+### 7. Utilizing the OpenAI API, a user can harness the power of AI to add to their to-dos
 ![Login Screen](/images/AI_before.png)
 
-### 7. And these to-dos are parsed and stored to this user in mongoDB as well
+### 8. And these to-dos are parsed and stored to this user in mongoDB as well
 ![Login Screen](/images/AI_after.png)
 
-### 8. If a user wants to share their list, they can download a PDF copy of it:
+### 9. If a user wants to share their list, they can download a PDF copy of it:
 ![Login Screen](/images/PDF.png)
 
-### 9. Logging out and signing back in as a different user preserves data integrity
+### 10. Logging out and signing back in as a different user preserves data integrity
 ![Login Screen](/images/Unique.png)
