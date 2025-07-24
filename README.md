@@ -1,57 +1,66 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7yqbrEZI)
-# CSE330
-Jonas Schwab 509002 JONASSCHWAB3 
 
-Chase Hurwitz 508582 
+#  🔍 Summary
+This full-stack To-Do List application allows users to register, log in, and manage their personal to-do items in a seamless and secure environment. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), this app supports essential task operations like adding, editing, completing, and deleting to-do items.
+🤖 OpenAI API is used to automatically summarize and enhance user task entries (optional feature).
+📧 SendGrid (via Twilio) is used to automatically send a welcome email when a user signs up — adding a professional touch to user onboarding.
+🧾MongoDB is used to store user information acorss sessions
 
-Approved by Professor Todd Sproull
+## How to run this code:
+##### 🧾 1. Prerequisites
+Make sure you have the following installed:
+Node.js (v18+ recommended): https://nodejs.org
 
-Rubric Breakdown
+##### 2. Clone the Repository
+##### 3. Delete and Re-Install Dependencies
+in ```./server```:
+```
+cd server
+rm -rf node_modules package-lock.json
+npm install
+```
+For the Frontend:
+Open a second terminal tab or window and run:
+```
+cd to_do_app
+rm -rf node_modules package-lock.json
+npm install
+```
+##### 🔐 4. Set Up API Keys
+The server uses the OpenAI API, MongoDB, Twilio SendGrid, so you'll need a .env file.
 
-  Rubric turned in on time (5 points)
-  
-    5 points: Submitted on time and checked by a TA.
-    
-  Languages/Frameworks Used (30 points)
-  
-    10 points: Learned and implemented React.js for the front end (to handle the UI for adding, editing, and displaying tasks).
-    
-    10 points: Learned and implemented Express.js for the back end (to manage routing and handle API requests).
-    
-    10 points: Learned and used MongoDB to store user data and to-do items, with collections for users and tasks.
-    
-  Functionality (45 points)
-  
-    User Authentication (10 points)
-    
-      5 points: Users can register and log in to their account.
-      
-      5 points: Users can log out and terminate their sessions.
-      
-    To-Do List Actions (20 points)
-    
-      5 points: Users can add new to-do items with a title and optional description.
-      
-      5 points: Users can edit the title and description of a to-do item.
-      
-      5 points: Users can delete a to-do item.
-      
-      5 points: Users can mark a to-do item as completed or incomplete.
-      
-    Data Persistence and Retrieval (10 points)
-    
-      5 points: The MongoDB database stores all user to-do lists and updates the data in real-time.
-      
-      5 points: Users can see a list of their to-do items, and items remain across sessions.
-      
-    Style and Usability (5 points)
-    
-      5 points: The site is intuitive to use, and aesthetically appealing
-      
-  Best Practices (5 points)
-  
-    3 points: Code is readable, well-documented, and follows consistent formatting.
-    
-    2 points: API endpoints and database schema are well-designed and follow RESTful conventions.
-    
-  Creative Portion (15 points)
+In ```server/.env```, create this file with the following contents:
+```
+PORT=8080
+MONGO_URI= ...
+TWILIO_SENDGRID_API_KEY=...
+OPENAI_API_KEY=...
+```
+
+##### ▶️ 5. Run the App
+run ```npm start in /to_do_app```
+run ```npm start in /server```
+
+## Don't want to do all that? See screenshots below for app walk through
+
+## 💡 Key Features
+Modern Frontend with React.js
+Designed a responsive and intuitive UI that lets users add, edit, complete, and delete tasks. The interface automatically updates based on user actions and login state.
+
+Secure Backend with Express.js & Node.js
+Created a robust backend to handle routing, authentication, and API requests, following RESTful design conventions.
+
+MongoDB Integration
+Implemented persistent data storage using MongoDB, allowing users' to-do items to be saved and retrieved across sessions. The database includes structured collections for users and tasks.
+
+User Authentication System
+Built a secure login and registration system using sessions and hashed passwords. Users can create accounts, log in/out, and manage their own data securely.
+
+SendGrid API Integration
+Upon user registration, the backend uses Twilio's SendGrid API to automatically send a confirmation email—adding a polished, professional touch to the signup experience.
+
+OpenAI API Integration
+Integrated the OpenAI API to provide users with personalized motivational messages or productivity suggestions—adding a creative layer of interactivity.
+
+Clean Code & Best Practices
+Maintained a modular codebase with readable, well-documented files. API endpoints and database schemas are logically structured and follow best practices.
+
