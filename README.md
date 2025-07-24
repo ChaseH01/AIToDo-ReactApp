@@ -1,7 +1,9 @@
+## Intro:
+This repo is an adaptation of a final project for WashU's CSE330 Rapid Prototype and Development. My partner contributed to the CSS styling, while I was responsible for all other aspects of the project. Note: AI was used to generate parts of this ReadMe
 
 #  🔍 Summary
 This full-stack To-Do List application allows users to register, log in, and manage their personal to-do items in a seamless and secure environment. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), this app supports essential task operations like adding, editing, completing, and deleting to-do items.
-🤖 OpenAI API is used to automatically summarize and enhance user task entries (optional feature).
+🤖 OpenAI API is used to automatically summarize and enhance user task entries.
 📧 SendGrid (via Twilio) is used to automatically send a welcome email when a user signs up — adding a professional touch to user onboarding.
 🧾MongoDB is used to store user information acorss sessions
 
