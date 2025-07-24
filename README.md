@@ -85,7 +85,7 @@ Maintained a modular codebase with readable, well-documented files. API endpoint
 ![Login Screen](/images/AI_before.png)
 
 ### 7. And these to-dos are parsed and stored to this user in mongoDB as well
-![Login Screen](/images/AI_After.png)
+![Login Screen](/images/AI_after.png)
 
 ### 8. If a user wants to share their list, they can download a PDF copy of it:
 ![Login Screen](/images/PDF.png)
